@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# HANGMAN GAME</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+        <audio id="click" src="soundfx/click.mp3"></audio>
+        <audio id="drawSound" src="soundfx/drawsound.mp3"></audio>
+        <audio id="victorySound" src="soundfx/victory.mp3"></audio>
+        <audio id="defeatSound" src="soundfx/defeat.mp3"></audio>
+
+    <div class="game-modal">
+        <div class="content">
+            <img src="Images/lost.gif" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>Variables</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="hangman-box">
+            <video id="hangmanVideo" autoplay>
+                <source src="hangman/hangman-0.mp4" type="video/mp4">
+            </video>
+            <h1>Hangman C# Game</h1>
+        </div>    
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">
+                Hint:
+                <b>Used to store data types</b>
+            </h4>
+            <h4 class="guesses-text">
+               Incorrect Guesses:
+                <b>0 / 6</b>
+            </h4>
+            <div class="keyboard"></div>
+        </div>  
+
+    </div>
+    
+</body>
+
+</html>
